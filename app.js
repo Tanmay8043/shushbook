@@ -19,7 +19,7 @@ app.set("view engine", "ejs");
 app.use(session({
   secret: "Nothing but our secret.",
   resave: false,
-  saveUninitialized: true,
+  saveUninitialized: false,
 }));
 
 app.use(passport.initialize());
